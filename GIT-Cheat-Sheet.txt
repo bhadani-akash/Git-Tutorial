@@ -1,0 +1,42 @@
+GIT Cheat Sheet
+
+1. Installation - Install GIT on your Linux/Windows/Mac machine.
+git --version // to check git version
+
+2. Configuration - Setting user.name & user.email are the necessary configuration options as your name & email will show up in your commit messages.
+git config --global user.name "<name>" // to set the name to git
+git config --global user.email  "<email>" // to set the email to git
+git config -list // to check configuration settings
+
+3. Initialization.
+git init Demo // initialize an empty git repository in “Demo” directory/folder
+git init // initialize an empty git repository
+git clone <url> // to clone a remote (GitHub) repository to your local directory
+git status // to display the status of the current working directory (branch)
+
+4. Branching.
+git branch // to list all the branches in the repository
+git branch <branch-name> // to create a new branch
+git checkout <branch-name> // to switch into the desired branch
+git checkout -b <branch-name> // to create a new branch and switch into it
+
+5. Staging & Commit.
+git add <filename> // to add file to staging area
+git add . // to add all files to the staging area
+git rm --cached <filename> // to remove file from staging area
+git rm <filename> // to permanently delete file
+git commit -m "<Commit Message>" // to directly commit files in the staging area with a commit message
+
+6. Track changes & Commit logs.
+git diff // to show changes in all files
+git diff --staged // to show changes in files in the staging area
+git log  // to show the logs of all commits 
+
+7. Push, Pull & Merge.
+git push origin <branch name(eg: master)> // to push local repository to remote repository with the specific branch name
+git push // to push local repository to remote repository (assuming its already present in remote repository)
+git pull <url> // to pull latest from remote repository to local working directory
+git merge <branch-name> // to merge current branch to the specified branch
+
+8. Connecting to GitHub.
+git remote add origin <url> // to connect local repository to remote server
