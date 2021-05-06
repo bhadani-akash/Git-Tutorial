@@ -6,7 +6,7 @@ git --version // to check git version
 2. Configuration - Setting user.name & user.email are the necessary configuration options as your name & email will show up in your commit messages.
 git config --global user.name "<name>" // to set the name to git
 git config --global user.email  "<email>" // to set the email to git
-git config -list // to check configuration settings
+git config --list // to check configuration settings
 
 3. Initialization.
 git init Demo // initialize an empty git repository in “Demo” directory/folder
