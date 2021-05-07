@@ -27,6 +27,7 @@ git add . // to add all files to the staging area
 git rm --cached <filename> // to remove file from staging area
 git rm <filename> // to permanently delete file
 git commit -m "<Commit Message>" // to directly commit files in the staging area with a commit message
+git reset --soft HEAD~1 // to undo last 1 commit
 
 6. Track changes & Commit logs.
 git diff // to show changes in all files
