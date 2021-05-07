@@ -17,6 +17,7 @@ git status // to display the status of the current working directory (branch)
 4. Branching.
 git branch // to list all the branches in the repository
 git branch <branch-name> // to create a new branch
+git branch -d <branch-name> // to delete the desired branch
 git checkout <branch-name> // to switch into the desired branch
 git checkout -b <branch-name> // to create a new branch and switch into it
 
