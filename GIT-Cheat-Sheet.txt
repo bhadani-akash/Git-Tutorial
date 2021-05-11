@@ -30,8 +30,9 @@ git commit -m "<Commit Message>" // to directly commit files in the staging area
 git reset --soft HEAD~1 // to undo last 1 commit
 
 6. Track changes & Commit logs.
-git diff // to show changes in all files
-git diff --staged // to show changes in files in the staging area
+git diff // to show changes in all files(not been staged)
+git diff --staged // to show changes in files in the staging area(but not been commited)
+git diff HEAD // to show changes after commiting a file
 git log  // to show the logs of all commits 
 
 7. Push, Pull & Merge.
