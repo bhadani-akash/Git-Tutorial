@@ -4,29 +4,32 @@ GIT Cheat Sheet
 git --version // to check git version
 
 2. Configuration - Setting user.name & user.email are the necessary configuration options as your name & email will show up in your commit messages.
-git config --global user.name "<name>" // to set the name to git
-git config --global user.email  "<email>" // to set the email to git
-git config --list // to check configuration settings
+git config --global user.name "<name>" // to set the name to your git commits
+git config --global user.email  "<email>" // to set the email to git commits
+git config --list // to check your git configuration settings
 
 3. Initialization.
-git init Demo // initialize an empty git repository in “Demo” directory/folder
-git init // initialize an empty git repository
-git clone <url> // to clone a remote (GitHub) repository to your local directory
+git init <directory_name> // to initialize an empty git repository inside a directory (non-existing)
+git init // to initialize an empty git repository to an existing project directory
+git clone <repository_url> // to clone a remote (GitHub) repository to your local directory
 git status // to display the status of the current working directory (branch)
 
 4. Branching.
-git branch // to list all the branches in the repository
-git branch <branch-name> // to create a new branch
-git branch -d <branch-name> // to delete the desired branch
-git checkout <branch-name> // to switch into the desired branch
-git checkout -b <branch-name> // to create a new branch and switch into it
+git branch <branch_name> // to create a new branch
+git checkout <branch_name> // to switch into the desired branch
+git checkout -b <branch_name> // to create a new branch and switch into it
+git branch // to list all the local branches
+git branch -r // to list all the remote branches
+git branch -a // to list all the local & remote branches
+git branch -d <branch_name> // to delete the desired branch
 
 5. Staging & Commit.
-git add <filename> // to add file to staging area
+git add <filename> // to add a particular file to the staging area 
 git add . // to add all files to the staging area
-git rm --cached <filename> // to remove file from staging area
-git rm <filename> // to permanently delete file
-git commit -m "<Commit Message>" // to directly commit files in the staging area with a commit message
+git rm --cached <filename> // to remove a particular file from the staging area
+git rm <filename> // to permanently delete a file
+git commit -m "<Your Commit Message>" // to directly commit files in the staging area with a commit message
+git commit --amend // to modify/update the last commit message
 git reset --soft HEAD~1 // to undo last 1 commit
 
 6. Track changes & Commit logs.
