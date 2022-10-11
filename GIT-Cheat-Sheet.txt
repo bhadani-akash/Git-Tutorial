@@ -46,3 +46,7 @@ git merge <branch-name> // to merge current branch to the specified branch
 
 8. Connecting to GitHub.
 git remote add origin <url> // to connect local repository to remote server
+
+9. Stashing
+git stash // to stash current uncommitted changes (both staged and unstaged) for later use
+git stash pop // to apply your stashed changes from stash to your working directory
