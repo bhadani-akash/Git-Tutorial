@@ -50,3 +50,6 @@ git remote add origin <url> // to connect local repository to remote server
 9. Stashing
 git stash // to stash current uncommitted changes (both staged and unstaged) for later use
 git stash pop // to apply your stashed changes from stash to your working directory
+
+10. Tags
+git push --tags // to push local tags to remote repository on current branch
