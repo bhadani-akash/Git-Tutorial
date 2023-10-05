@@ -43,6 +43,7 @@ git push origin <branch name(eg: master)> // to push local repository to remote 
 git push // to push local repository to remote repository (assuming its already present in remote repository)
 git pull <url> // to pull latest from remote repository to local working directory
 git merge <branch-name> // to merge current branch to the specified branch
+git merge --abort // to abort merge conflicts
 
 8. Connecting to GitHub.
 git remote add origin <url> // to connect local repository to remote server
